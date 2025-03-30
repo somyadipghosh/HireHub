@@ -14,6 +14,7 @@ Hirehub is a comprehensive platform designed to connect employers and job seeker
 ### Backend
 - PHP
 - MySQL/MariaDB
+- Python
 
 ### Development Tools
 - XAMPP (Apache, MySQL, PHP)
@@ -73,5 +74,5 @@ Hirehub is a comprehensive platform designed to connect employers and job seeker
 
 ## License
 
-This project is licensed under the MIT License - see below for details:
+This project is licensed under the MIT License
 
