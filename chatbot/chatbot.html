@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <div class="app-container">
+        <button class="toggle-btn" id="toggleBtn" aria-label="Toggle Sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toggle-icon open-icon">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toggle-icon close-icon" style="display: none;">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Chat History</h2>
+                <button class="new-chat-btn" id="newChatBtn">New Chat</button>
+            </div>
+            <ul class="chat-history" id="chatHistory"></ul>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-actions-left">
+                    <button class="back-btn" onclick="window.history.back()" aria-label="Go back">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <div class="chat-title">
+                    <img src="../assets/img/HireHub.png" alt="HireHub Logo" class="header-logo">
+                    <span>ChatBot</span>
+                    <span class="status-dot"></span>
+                    <style>
+                        .status-dot {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #28a745; /* Green color */
+                        border-radius: 50%;
+                        margin-left: 8px;
+                        }
+                    </style>
+                </div>
+            </div>
+
+            <div class="chat-box" id="chatBox">
+                <div class="message bot-message">
+                    Hello! How can I assist you today?
+                    <div class="message-time">Just now</div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <div class="chat-input">
+                    <input
+                        type="text"
+                        id="userInput"
+                        placeholder="Type a message..."
+                        autocomplete="off">
+                    <button class="send-btn" id="sendBtn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="deleteModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Delete Chat</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this chat? This action cannot be undone.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn cancel-btn" id="cancelDelete">Cancel</button>
+                <button class="modal-btn confirm-btn" id="confirmDelete">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>

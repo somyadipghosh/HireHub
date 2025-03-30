@@ -1,0 +1,35 @@
+[2025-03-30 07:14:33] Request received. Method: GET
+[2025-03-30 07:14:37] Request received. Method: GET
+[2025-03-30 07:15:30] Request received. Method: POST
+[2025-03-30 07:15:30] Raw input: {"message":"hi"}
+[2025-03-30 07:15:30] Test response sent successfully
+[2025-03-30 07:15:39] Request received. Method: POST
+[2025-03-30 07:15:39] Raw input: {"message":"sam is bad"}
+[2025-03-30 07:15:39] Sending request to OpenAI API
+[2025-03-30 07:15:41] API response code: 200
+[2025-03-30 07:15:41] API response: {
+  "id": "chatcmpl-BGfJEmeSy18a5ZNGeFEhGNPGJUWAg",
+  "object": "chat.completion",
+  "created": 1743311740,
+  "model": "gpt-3.5-turbo-0125",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+ ...
+[2025-03-30 07:15:41] Success: Response sent to client
+[2025-03-30 07:15:57] Request received. Method: POST
+[2025-03-30 07:15:57] Raw input: {"message":"education"}
+[2025-03-30 07:15:57] Sending request to OpenAI API
+[2025-03-30 07:15:59] API response code: 200
+[2025-03-30 07:15:59] API response: {
+  "id": "chatcmpl-BGfJVBGhLoTiuyMRhVc5cEWodKVoz",
+  "object": "chat.completion",
+  "created": 1743311757,
+  "model": "gpt-3.5-turbo-0125",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+ ...
+[2025-03-30 07:15:59] Success: Response sent to client
