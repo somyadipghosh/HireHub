@@ -171,7 +171,7 @@ include("./config/auth_session.php");
                 <div class="gallery-item">
                     <img src="./assets/img/live_coding.jpg" alt="Live Coding">
                     <div class="overlay">
-                        <h3>Live Coding Tests</h3>
+                         <a href="./user/onlinecompiler.php"><h3>Live Coding Tests</h3></a>
                     </div>
                 </div>
             </div>
